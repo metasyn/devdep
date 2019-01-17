@@ -1,0 +1,40 @@
+[tools]
+    [tools.equal]
+    command = "echo v1.2.3"
+    version-regex = ".*?(v.*)"
+    version-required = "=1.2.2"
+
+    [tools.notEqual]
+    command = "echo v1.2.3"
+    version-regex = ".*?(v.*)"
+    version-required = "!=1.2.3"
+
+    [tools.greaterThan]
+    command = "echo v1.2.3"
+    version-regex = ".*?(v.*)"
+    version-required = ">1.2.4"
+
+    [tools.greaterThanOrEqual]
+    command = "echo v1.2.3"
+    version-regex = ".*?(v.*)"
+    version-required = ">=1.5.2"
+
+    [tools.lessThan]
+    command = "echo v1.2.3"
+    version-regex = ".*?(v.*)"
+    version-required = "<0.1.3"
+
+    [tools.lessThanOrEqual]
+    command = "echo v1.2.3"
+    version-regex = ".*?(v.*)"
+    version-required = "<=1.2.0"
+
+    [tools.majorEquivalent]
+    command = "echo v1.9999999.0"
+    version-regex = ".*?(v.*)"
+    version-required = "^2.0.0"
+
+    [tools.minorEquivalent]
+    command = "echo v1.9.123"
+    version-regex = ".*?(v.*)"
+    version-required = "~1.7.7"

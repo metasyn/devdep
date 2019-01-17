@@ -1,0 +1,42 @@
+[tools]
+    [tools.equal]
+    command = "echo v1.2.3"
+    version-regex = ".*?(v.*)"
+    version-required = "=1.2.3"
+
+    [tools.notEqual]
+    command = "echo v1.2.3"
+    version-regex = ".*?(v.*)"
+    version-required = "!=6.6.6"
+
+    [tools.greaterThan]
+    command = "echo v1.2.3"
+    version-regex = ".*?(v.*)"
+    version-required = ">0.123.2"
+
+    [tools.greaterThanOrEqual]
+    command = "echo v1.2.3"
+    version-regex = ".*?(v.*)"
+    version-required = ">=1.2.3"
+
+    [tools.lessThan]
+    command = "echo v1.2.3"
+    version-regex = ".*?(v.*)"
+    version-required = "<2.99.3"
+
+    [tools.lessThanOrEqual]
+    command = "echo v1.2.3"
+    version-regex = ".*?(v.*)"
+    version-required = "<=1.2.3"
+
+    # Major same, minor larger, patch smaller
+    [tools.majorEquivalent]
+    command = "echo v1.9999999.0"
+    version-regex = ".*?(v.*)"
+    version-required = "^1.2.3"
+
+    # Major same, minor same, patch larger
+    [tools.minorEquivalent]
+    command = "echo v1.9.123"
+    version-regex = ".*?(v.*)"
+    version-required = "~1.9.122"

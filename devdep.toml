@@ -1,0 +1,29 @@
+[paths]
+exist = [
+    "$GOPATH/src/github.com/onsi/gomega"
+]
+
+[environment]
+variables = [
+    "$GOBIN",
+    "$GOPATH",
+]
+
+[tools]
+    [tools.make]
+    command = "make -v"
+    version-regex = 'GNU Make (\d+\.\d+\.\d+)'
+    version-required = "^4.0.0"
+    url = "https://www.gnu.org/software/make/"
+
+    [tools.nim]
+    command = "nim -v"
+    version-regex = 'Nim Compiler Version (\d+\.\d+\.\d+)'
+    version-required = ">0.19.2"
+    url = "https://nim-lang.org/"
+
+    [tools.kubectl]
+    command = "kube version"
+    version-regex = '.*GitVersion:"(.+?)"'
+    version-required = "^1.11.1"
+    url = "https://kubernetes.io/docs/tasks/tools/install-kubectl/"
