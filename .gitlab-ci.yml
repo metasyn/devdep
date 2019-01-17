@@ -1,7 +1,7 @@
 stages:
  - test
 
-caches:
+cache:
   paths:
     - ~/.nimble
 
