@@ -3,7 +3,7 @@ stages:
 
 cache:
   paths:
-    - ~/.nimble/**/*
+    - ~/nimble/
 
 nimble-test:
   stage: test
