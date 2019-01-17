@@ -9,7 +9,7 @@ bin           = @["devdep"]
 
 
 # Dependencies
-requires "nim >= 0.19.2"
+requires "nim >= 0.19.0"
 requires "semver >= 1.1.0"
 requires "parsetoml >= 0.4.0"
 requires "docopt >= 0.6.8"

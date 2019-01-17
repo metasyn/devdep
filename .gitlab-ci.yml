@@ -1,0 +1,14 @@
+stages:
+ - test
+
+caches:
+  paths:
+    - ~/.nimble
+
+nimble-test:
+  stage: test
+  image: nimlang/nim
+  before_script:
+    - nimble install -y
+  script:
+    - nimble test
